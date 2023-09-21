@@ -24,7 +24,8 @@ public class IntroAge {
                     int yourDay = entrada.nextInt();
                     if ((Object)yourDay instanceof Integer){
                         System.out.println("A partir de aquí ya es chamba del equipo de Calculate");
-
+                        System.out.println("Tu fecha de nacimiento es: " + yourDay + "/" + yourMonth + "/" + yourYears);
+                        System.out.println("La fecha actual es: "+ diaActual.dias +"/"+ mesActual.meses +"/"+ yearActual.years);
                     }
                     else{
                         validacionYourDay.valid = false;
@@ -39,8 +40,5 @@ public class IntroAge {
 
         }
 
-
-        System.out.println("Tu fecha de nacimiento es: " + yourDay + "/" + yourMonth + "/" + yourYears);
-        System.out.println("La fecha actual es: "+ diaActual.dias +"/"+ mesActual.meses +"/"+ yearActual.years);
     }
 }
