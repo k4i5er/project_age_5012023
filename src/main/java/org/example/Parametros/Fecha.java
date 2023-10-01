@@ -1,13 +1,9 @@
 package org.example.Parametros;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
 
 public class Fecha{
-    public static void fecha(String mes){
-            String[] meses={"enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"};
-            for (int i=1; 1=n; i++){
-
-            }
-
-    }
-
+    List<String> Meses;
 
 }
