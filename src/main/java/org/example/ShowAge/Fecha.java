@@ -1,6 +1,6 @@
 package org.example.ShowAge;
 
-public class TestValues {
+public class Fecha {
     Integer dias;
     Integer meses;
     Integer years;

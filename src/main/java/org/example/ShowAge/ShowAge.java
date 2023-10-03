@@ -4,44 +4,22 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ShowAge {
-    public static void main(String[] args){
-        Parametres DiaActual = new Parametres();
-        Parametres MesActual = new Parametres();
-        Parametres YearActual = new Parametres();
-        Parametres yourDay = new Parametres();
-        Parametres yourMonth = new Parametres();
-        Parametres yourYear = new Parametres();
-        Parametres DiasPasados = new Parametres();
-        Parametres MesesPasados = new Parametres();
-        Parametres YearsPasados = new Parametres();
-
-        DiaActual.dias = 28;
-        MesActual.meses = 9;
-        YearActual.years = 2023;
-        yourDay.dias = 14;
-        yourMonth.meses = 6;
-        yourYear.years = 2000;
-        DiasPasados.dias = 14;
-        MesesPasados.meses = 3;
-        YearsPasados.years = 23;
-        // Valores de prueba, se van a borrar una vez que se junten todos los programas.
-        List<String> lista = new ArrayList<>() { {
-            add("enero");
-            add("febrero");
-            add("marzo");
-            add("abril");
-            add("mayo");
-            add("junio");
-            add("julio");
-            add("agosto");
-            add("septiembre");
-            add("octubre");
-            add("noviembre");
-            add("diciembre");
-        } };
-
-        System.out.println("La fecha de hoy es: " + DiaActual.dias + " de " + lista.get(MesActual.meses-1) + " de " + YearActual.years);
-        System.out.println("La fecha que ingresaste es: " + yourDay.dias + " de " + lista.get(yourMonth.meses-1) + " de " + yourYear.years);
-        System.out.println("Han pasado " + YearsPasados.years + " años, " + MesesPasados.meses + " meses y " + DiasPasados.dias + " días entre las dos fechas.");
+    List<String> lista_meses = new ArrayList<>() { {add("enero");add("febrero");add("marzo");add("abril");add("mayo");add("junio");add("julio");add("agosto");add("septiembre");add("octubre");add("noviembre");add("diciembre");} };
+    public ShowAge(Integer diaActual, Integer mesActual, Integer yearActual, Integer yourDay, Integer yourMonth, Integer yourYear, Integer diasPasados, Integer mesesPasados, Integer yearsPasados){
+        Fecha actual = new Fecha();
+        actual.dias = diaActual;
+        actual.meses = mesActual;
+        actual.years = yearActual;
+        Fecha nacimiento = new Fecha();
+        nacimiento.dias = yourDay;
+        nacimiento.meses = yourMonth;
+        nacimiento.years = yourYear;
+        Fecha pasado = new Fecha();
+        pasado.dias = diasPasados;
+        pasado.meses = mesesPasados;
+        pasado.years = yearsPasados;
+        System.out.println("La fecha de hoy es: " + actual.dias + " de " + lista_meses.get(actual.meses-1) + " de " + actual.years);
+        System.out.println("Tu fecha de nacimiento es: " + nacimiento.dias + " de " + lista_meses.get(nacimiento.meses-1) + " de " + nacimiento.years);
+        System.out.println("Han pasado " + pasado.years + " años, " + pasado.meses + " meses y " + pasado.dias + " días entre las dos fechas.");
     }
 }
