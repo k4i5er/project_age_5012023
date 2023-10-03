@@ -16,19 +16,9 @@ public class Fecha{
 
     }
 
-    public static Integer numeroDeMes(Integer numero){
-        Integer[] numMes={1,2, 3, 4, 5,6, 7, 8, 9, 10, 11, 12};
-        for (int i=0; i<numMes.length; i++){
-            if (numero.equals(numMes[i])){
-                return i+1;
-
-            }
-        }
-        return -1;
-    }
 
     public static Boolean esBisiesto(Integer anio){
-        if(anio % 100 == 0 && anio %4 == 0){
+        if (anio % 100 == 0 && anio %4 == 0){
             return true;
         } else {
             return false;

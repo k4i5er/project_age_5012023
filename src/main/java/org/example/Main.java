@@ -17,14 +17,11 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         System.out.print("Escribe el nombre de un mes: ");
         mes = sc.nextLine(); // name = input('Escribe tu nombre')
-        numero=sc.nextInt();
+        //numero=sc.nextInt();
         //Fecha f = new Fecha();
         if (Fecha.nombreDeMes(mes) != -1) {
             System.out.println("El número de mes correspondiente a " + mes + " es " + Fecha.nombreDeMes(mes));
-        } else if (Fecha.numeroDeMes(numero) !=-1){
-            System.out.println("El numero" + numero + " corresponde a "+ Fecha.nombreDeMes(mes) );
-
-
+        } else {
             System.out.println("No se encontró el nombre del mes " + mes);
             System.exit(0);
         }
