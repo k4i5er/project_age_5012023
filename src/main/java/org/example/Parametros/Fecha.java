@@ -7,17 +7,17 @@ import java.util.Scanner;
 public class Fecha{
     List<String> Meses;
 =======
-public class Fecha {
-    public static void fecha(String mes) {
-        String[] meses = {"enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"};
-        for (int i = 1; 1 = n; i++) {
+    public class Fecha {
+        public static void fecha(String mes) {
+            String[] meses = {"enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"};
+            for (int i = 1; 1 = n; i++) {
+
+            }
 
         }
-
     }
-}
 
-public class AnioBisiesto{
+    public class AnioBisiesto{
         public static Anio(String[] anioB){
             int year=2004;
 
@@ -36,9 +36,7 @@ public class AnioBisiesto{
             } else {
                 return 0;
             }
->>>>>>> 60b013c00ac1a4df7dd1a33d1c7eec1dc745f0c5
-
-}
+        }
 
 
 
