@@ -13,5 +13,6 @@ public class Main {
             en años, meses y días y devuelva su edad en esos mismos
             términos
          */
+        new ShowAge(3,10,2023,14,6,2000,13,3,23);
         }
     }
