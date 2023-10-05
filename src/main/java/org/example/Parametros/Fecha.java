@@ -18,10 +18,6 @@ public class Fecha{
 
 
     public static Boolean esBisiesto(Integer anio){
-        if (anio % 100 == 0 && anio %4 == 0){
-            return true;
-        } else {
-            return false;
-        }
+        return anio % 100 == 0 && anio % 4 == 0;
     }
 }
