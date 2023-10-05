@@ -1,5 +1,7 @@
 package org.example;
 
+import org.example.ShowAge.ShowAge;
+
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
@@ -11,6 +13,10 @@ public class Main {
             en años, meses y días y devuelva su edad en esos mismos
             términos
          */
+<<<<<<< HEAD
 
+=======
+        new ShowAge(3,10,2023,14,6,2000,13,3,23);
+        }
+>>>>>>> features/show_age
     }
-}
