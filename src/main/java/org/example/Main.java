@@ -1,6 +1,5 @@
 package org.example;
 
-
 import org.example.ShowAge.ShowAge;
 
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
