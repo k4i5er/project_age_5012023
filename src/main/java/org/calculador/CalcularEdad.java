@@ -1,26 +1,17 @@
 package org.calculador;
 import java.util.ArrayList;
 public class CalcularEdad {
-    ArrayList<Integer> tiempoPasado;
+    static ArrayList<Integer> tiempoPasado;
 
-    public ArrayList<Integer> calcular(Integer diaActual, Integer mesActual, Integer yearActual, Integer yourDay, Integer yourMonth, Integer yourYear,
+    public static ArrayList<Integer> calcular(Integer diaActual, Integer mesActual, Integer yearActual, Integer yourDay, Integer yourMonth, Integer yourYear,
                                        Integer diasPasados, Integer mesesPasados, Integer yearsPasados, Integer buleano) {
-
-        diaActual = 21;
-        mesActual = 9;
-        yearActual = 2023;
-        yourDay = 12;
-        yourMonth = 7;
-        yourYear = 2003;
-        buleano = 1;
-
         if (mesActual > yourMonth || mesActual == yourMonth && diaActual > yourDay) {
             yearsPasados = yearActual - yourYear;
             mesesPasados = mesActual - yourMonth;
             diasPasados = diaActual - yourDay;
-            this.tiempoPasado.add(yearsPasados);
-            this.tiempoPasado.add(mesesPasados);
-            this.tiempoPasado.add(diasPasados);
+            tiempoPasado.add(yearsPasados);
+            tiempoPasado.add(mesesPasados);
+            tiempoPasado.add(diasPasados);
             return tiempoPasado;
         }
         else{

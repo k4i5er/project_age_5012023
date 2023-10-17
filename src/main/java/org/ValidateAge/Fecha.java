@@ -1,19 +1,21 @@
 // Fecha.java
-package org.example.Parametros;
+package org.ValidateAge;
 
-public class Fecha{
-    public Fecha(){
-        System.out.println("Está naciendo una nueva instancia...");
-    }
-    public static Integer nombreDeMes(String mes) {
+public class Fecha {
+    public static void fecha(String mes) {
         String[] meses = {"enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"};
-        for (int i = 0; i < meses.length; i++) {
-            if (mes.equals(meses[i])) {
-                return i + 1;
+
+        for (int i = 1; i <= meses.length; i++) {
+            if (mes.equals(meses[i - 1])) {
+                System.out.println("El mes ingresado es válido.");
+                return;
             }
         }
-        return -1;
+        System.out.println("El mes ingresado no es válido.");
     }
+}
+
+/*
     public static Boolean esBisiesto(Integer anio){
         if(anio % 100 == 0 && anio %4 == 0){
             return true;
@@ -21,4 +23,6 @@ public class Fecha{
             return false;
         }
     }
- }
+}
+*/
+

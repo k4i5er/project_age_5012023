@@ -7,7 +7,7 @@ public class ShowAge {
     List<String> lista_meses = new ArrayList<>() { {add("enero");add("febrero");add("marzo");add("abril");add("mayo");add("junio");add("julio");add("agosto");add("septiembre");add("octubre");add("noviembre");add("diciembre");} };
     public ShowAge(Integer diaActual, Integer mesActual, Integer yearActual, Integer yourDay, Integer yourMonth, Integer yourYear, Integer diasPasados, Integer mesesPasados, Integer yearsPasados){
         Fecha actual = new Fecha();
-        actual.dias = diaActual;
+        actual.setDias(diaActual);
         actual.meses = mesActual;
         actual.years = yearActual;
         Fecha nacimiento = new Fecha();

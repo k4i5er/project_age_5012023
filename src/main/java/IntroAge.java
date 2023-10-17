@@ -6,6 +6,7 @@ public class IntroAge {
     Integer yearActual;
     Parametres validacionYourYear = new Parametres();
     Parametres validacionYourDay = new Parametres();
+
     public IntroAge(Integer diaAct, String diaPal, Integer mesAct, Integer anioAct){
         this.diaActual = diaAct;
         this.mesActual = mesAct;
@@ -16,6 +17,7 @@ public class IntroAge {
         /*diaActual.dias = 18;
         mesActual.meses = 9;
         yearActual.years = 2023;*/
+        Scanner entrada = new Scanner(System.in);
         System.out.print("Por favor introduce la fecha actual...\nAño actual: ");
         int actualYear = entrada.nextInt();
         System.out.print("Introduce el mes actual: ");
