@@ -1,12 +1,15 @@
 import java.util.Scanner;
 public class IntroAge {
-    public static void main(String[]args){
-        Parametres diaActual = new Parametres();
-        Parametres mesActual = new Parametres();
-        Parametres yearActual = new Parametres();
-        Parametres validacionYourYear = new Parametres();
-        Parametres validacionYourDay = new Parametres();
-        Scanner entrada = new Scanner(System.in);
+    // Atributos
+    Integer diaActual;
+    Integer mesActual;
+    Integer yearActual;
+    Parametres validacionYourYear = new Parametres();
+    Parametres validacionYourDay = new Parametres();
+    public IntroAge(Integer diaAct, String diaPal, Integer mesAct, Integer anioAct){
+        this.diaActual = diaAct;
+        this.mesActual = mesAct;
+
 
         validacionYourYear.valid = true;
         validacionYourDay.valid = true;
